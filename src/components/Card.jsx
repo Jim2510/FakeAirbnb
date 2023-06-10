@@ -1,4 +1,4 @@
-
+import star from '../assets/imgs/star.png'
 const Card = (props) => {
 
  let badge
@@ -13,7 +13,7 @@ const Card = (props) => {
       {badge && <div className="card--badge">{badge}</div>}
     <img src={props.coverImg} className="card--image" />
     <div className="card--stats">
-        <img src="../src/assets/imgs/star.png" className="card--star" />
+        <img src={star} className="card--star" />
         <span>{props.stats.rating}</span>
         <span className="gray">({props.stats.reviewCount}) • </span>
         <span className="gray">{props.location}</span>
